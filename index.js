@@ -1,640 +1,492 @@
-/*let sum = 10 ;
-if(sum >=18){
-    console.log("your are eligible to vote");
+// DAY -1 //
+/*
+alert("this is an alert message");
+console.log("Hello world");
+document.write("Hi ! how are you");
+// This is a single line comment //
+/*This is a multi line comment */
+/*
+function btnOnclick(){
+    let btn = document.getElementById("demo").innerText = "hello ! i am a DOM object" ;
+    body.btn.style.backgroundColor = "blue";
 }
-else{
-    console.log("your not eligible to vote");
-} */
-
-   
-   /* let str = "JAGAN" ;
-    console.log(str.toLowerCase());
-    */
-
-
-/*    let student = {
-    Name : "jagan" ,
-    age : 19 ,
-    cgpa : 9.8,
-    isStudent : true ,
-}
-for(let key in student){
-    console.log("key",key,"value is =",student[key])
-}
-    */
-
-/*let sum = 0 ;
-do{
-    console.log(sum);
-}while(sum<=100){
-    if(sum % 2 === 0);
-    sum ++;
-}
-    */
-
-/*
-let obj = {
-    item : "pen" ,
-    price : 10 ,
-};
-let output = `the cost of the ${obj.item} is ${obj.price} rupees`
-console.log(output);
 */
-
-//STRING METHODS //
-/*
-let str = "              JAGAN     js" ;
-console.log(str);
-*/
-/*
-let str = "123456789" ;
-console.log(str.slice(2,3 ));
-*/
-
-// STRING CONCATINATION //
-
-/*
-let str1 = "jagan" ;
-let str2 = "alekhya" ;
-console.log(str1.concat(str2)) ;
-
-*/
-
-// STRING REPALCE //
-
-/*
-
-let str = "hello" ;
- console.log(str.replace("h","j")) ;
-
- */
-
-// PRACTICE //
-
-/*
-
-let username = prompt("enter your name without white spaces ");
- let fullName ="@" + username + username.length ;
- console.log(fullName);
-
- */
-//ARRAYS //
-
-/*
-let marks = [55,77,88,99,33] ;
-marks[3] = 22
-
-console.log(marks );
-
-*/
-
-//LOOPING IN OVER ARRAYS //
-
-/*
-
-let heroes = ["superman","antman","batman","spiderman","ironman","captain america"] ;
-
-for(let i=0;i<heroes.length;i++){
-    console.log(heroes[i]);
-}
-    */
-
-
-//FOR OF //
-/*
-let cities = ["delhi","pune","mumbai","kolkata","hyderabad"] ;
-
-for(let city of cities){
-    console.log(city.toUpperCase());
-}
-
-*/
-
-
-/*let marks = [45,56,67,78,89,90] ;
-
-let sum = 0 ;
- for(let i of marks){
-    sum += i ;
- }
-
- let avg = sum / marks.length ;
- console.log(`The average marks of the class =${avg}`);
- */
-
+// DAY - 2 //
+// VARIABLES , DATA TYPES , OPERATORS
+// VARIABLES 
+//variables are used to stored data
+// let c = 10 ;
+// let b =10;
+// console.log(a);
+// console.log(b);
+// var a = 10;
+// var a = 20;
+// console.log(a);
+// const PI = 3.14 ;
+// console.log(PI);
+// DATA TYPES
  /*
- let company = ["Bloomberg","Microsoft","Uber","Google","Netflix","IBM"] ;
-
- //company.shift("Bloomberg");
- //company.splice(2,1,"ola");
- company.push("Amazon")
-
- console.log(company);
-
- */
-/*
-function myFunction(msg){
-    console.log(msg);
+let person = {
+    name : "jagan",
+    age : 20,
+    isstudent :true,
+    notSet:0,
 }
+console.log( typeof person);
+console.log(typeof age);
+console.log(typeof name);
+console.log(typeof isStudent);
+*/
+//OPERATORS //
+ // ARTHEMETIC OPERATORS //
+//  let a = 10;
+//  let b = 20 ;
+//  console.log(a + b);
+//  console.log(a - b);
+//  console.log(a * b);
+//  console.log(a / b);
+//  console.log(a % b);
+//  console.log(a ** b);
 
- myFunction("i love js,and i am very intrested to learn");
- */
+// COMPARISION OPERATORS //
 /*
- 
- function sum(x,y){
-    console.log(x + y);
+let a = 10 ;
+let b = 10 ;
+console.log(a==b);
+console.log(a===b);
+console.log(a != b);
+console.log(a > b);
+console.log(a < b);
+console.log(a<=b);
+console.log(a>=b);
+*/
+// ASSINMENT OPERATORS //
+/*
+let a =10;
+let b = 20 ;
+a += 20;
+a -=5;
+a *=5;
+a /=6;
+b = b + 20;
+b = b -10;
+b = b* 20;
+b = b / 10;
+b = b **10;
+console.log(a);
+console.log(b);
+*/
+// LOGICAL OPERATORS //
+// let a = 10;
+// let b = 20 ;
+// console.log(a<b && a<b);
+// console.log(a<b || a>b);
+
+// TERINARY OPEARORS
+// let isOnline = true;
+// console.log(!isOnline);
+
+/*
+ let age = 18;
+  let result = (age<=18)?"your eligible for vote":"your nit eligible for vote";
+  console.log(result);
+
+  let isOnline = true;
+  let status = (isOnline )?"yes is online " :"not out of connnection";
+  console.log(status);
+  */
+ // DAY - 3
+ /*
+ let age = prompt("Enter your age");
+ if(age>=18){
+    console.log("your eligible for vote");
  }
-*/
-//ARROW FUNCTION
+ else{
+    console.log("your not eligibe for vote");
+ }*/
 /*
-  const myFunction = (x,y) =>{
-      console.log( a + b);
-  }
-      */
 
-  /*
-const arrowMul = (x , y) => {
-    return x * y ;
-}
-    */
-   
-let arr = ["mumbai","pune","chennai","bangalore"] ;
-arr.forEach((val) => {
-    console.log(val);
-}
-);
-
-
-// A CALL BACK FUNCTION PASSED AS AN ARGUMENT TO ANOTHER FUNCTION //
-// ITS EXCUTE ALL ELEMNTS IN A ARRAY //
-
-
-/*
-let arr = ["india","america","china","japan"] ;
-
-arr.forEach((val,idx,arr) =>{
-    console.log(val,idx,arr);
-}
-
-);
-*/
-/*
-let arr = [0];
-
-arr.forEach((n ) =>{
-    for(n=0;n<=100;n++){
-        console.log("squar root of a num =",n*n);
+    let marks = prompt("Enter Your Marks");
+    if(marks = 100){
+        console.log("A+");
     }
-}
-)*/
-
-// MAP IS USED TO FROM A NEW ARRAY //
-/*
-let arr = [44,55,66] ;
-
- let newArray = arr.map((val) => {
- return val * 2 ;
-}
-);
-console.log(newArray);
-*/
-
-// FILTER  IS USED TO CREATE  A NEW ARRAY AND GIVE TRUE CONDITION //
-/*
-let arr = [1,2,3,4,5,6,7,8,9] ;
-
-let newArr = arr.filter((val) =>{
-    return  val % 2 !== 0 ;
-});
-
-console.log(newArr);
-*/
-
-//PERFORM SOME OPERATIONS & REDUCES THE ARRAY TOA A SINGLE VALUE IT RETURNS THAT SINGLR VALUE 
-
-/*
-let arr = [1,2,3,4] ;
-
- const newArr = arr.reduce((res, curr) => {
-    return res + curr ;
-});
-
-console.log(newArr);*/
-
-
-// PRACTICE //
-/*
-
-let arr = [87,93,64,99,86] ;
-
-const newArr = arr.filter((val) => {
-    return val >=90 ;
-});
-
- console.log(newArr);
- */
-
-
-//DOM  means documnet object model it have DOM manupulation
-// and it contains idselector,classname slector,tagname selctor,and queryselector,and queryselectorall
-
-//console.dir(document.body.childNodes[1]);
-//console.dir(document.body.childNodes[1]);
-  //document.body.style.background ="orange";
-  //document.body.style.color = "white";
-
-  //document.body.style.textAlign = "center";
-
-  //document.body.style.textAlign = "center";
-  //document.body.style.textAlign = "center";
-  //document.body.style.border = "3px solid black,border-radius:20px";
-  //let headings = document.getElementsByClassName("heading-class") ;
-
- // console.dir(headings);
-   //let para = document.getElementsByTagName("p") ;
-
-   //console.dir(para) ;
-
-   //let firstEl = document.querySelector("p") ;
-   //console.dir(firstEl) ;
-
-
-  // let allEl = document.querySelectorAll("p") ;
-  // console.dir(allEl);
-
-
-//let div = document.querySelector("div");
-
-//console.dir(div);
-
-//let head = document.querySelector("h2") ;
-
-//head.innerText = head.innerText + "! from Apna college students"
-
-//console.dir(head.innerText);
-
-
-/*
-let div = document.querySelector("div");
-console.log(div);
-
-let id = div.getAttribute("id");
-
-console.log(id);
-
-let name = div.getAttribute("name");
-
-console.log(name);
-*/
-/*
-let div = document.querySelector("div");
-
-div.style.backgroundColor = "green";
-div.style.color="white";
-div.style.fontSize= "26px";
-div.innerText = "Hello!"
-*/
- 
-/*
-
-*/
-/*
-
-let newBtn = document.createElement("button");
-newBtn.innerText = "Click me";
-console.log(newBtn);
-
-let p = document.querySelector("p");
-p.prepend(newBtn);
-
-let newHeading = document.createElement("h1");
-newHeading.innerHTML = "<i>Hello i am new!</i>" ;
-
-document.querySelector("body").prepend(newHeading);
-*/
-// DELETING A ELEMENT //
-/*
-let para = document.querySelector("p");
-para.remove();
-*/
-/*
-
-let newBtn = document.createElement("button");
-newBtn.innerText = "Click me";
-console.log(newBtn);
-
-newBtn.style.color = "white";
-newBtn.style.background = "red";
-document.querySelector("body").before(newBtn);*/
-
-//EVENTS//
-// THE CHANGE IN THE STATE OF AN OBJECT IS KNOW AS AN EVENT //
-
-/*
-let btn1 = document.querySelector("#btn1");
-btn1.onclick = () => {
-    console.log("btn1 was clicked");
-    let a = 25 ;
-    a++;
-    console.log(a);
-};
-*//*
-let btn1 = document.querySelector("#btn1");
-btn1.onclick = () =>{
-    let a = 25;
-    a++;
-    console.log(a);
-};
-
-let div = document.querySelector("div");
-div.onmouseover = () =>{
-    console.log("your on div")
-}*/
-/*
-
-let btn1 =document.querySelector("#btn1");
-
-btn1.onclick = (evt) =>{
-    console.log(evt)
-    console.log(evt.type)
-}*/
-/*
-let btn1 = document.querySelector("#btn1") ;
-
-btn1.addEventListener("click",() =>{
-    console.log("button was clicked - handeler1");
-});
-
-btn1.addEventListener("click",() => {
-    console.log("button was clicked - handeler2");
-});
-
-btn1.addEventListener("click",() =>{
-    console.log("button was clicked - handeler 3");
-});
-
-btn1.removeEventListener("click",() => {
-    console.log("n ")
-})
-    */
-
-/*
-let btnMode = document.querySelector("#mode");
-let currMode = "light";
-
-btnMode.addEventListener("click",() =>{
-    if(currMode === "light"){
-        currMode = "dark";
+    else if(marks<=90){
+        console.log("A");
+    }
+    else if(marks<=80){
+        console.log("B+");
+    }
+    else if(marks<=70){
+        console.log("B+");
+    }
+    else if(marks<=60){
+        console.log("c+");
+    }
+    else if(marks<=50){
+        console.log("c+");
     }
     else{
-        currMode = "light";
+        console.log("Fail");
     }
-    console.log(currMode);
-});
+        */
+       /*
+       let day = parseInt(prompt("Enter a day number"));
+       switch(day){
+        case 1 :alert("Monday");
+        break;
+        case 2 :alert("Tuesday");
+        break;
+        case 3 :alert("Wednesday");
+        break;
+        case 4:alert("Thursdsay")
+        break;
+        case 5:alert("Friday");v
+        break;
+        case 6:alert("Saturday");
+        break;
+        default :alert("your are enter wrong week day");
+       }
+        */
+       // LOOPS //
+       //for loop//
+       /*
+       let i ;
+       for(i=0;i<=10;i++){
+        console.log("the number between 0-10",i)
+       }
+        */
+
+       // WHILE LOOP //
+/*
+       let i = 0 ;
+       while(i<=10){
+           console.log("the numbers between 0 - 10",i);
+           i ++;
+       }
 */
+
+// DO - WHILE //
+
 /*
-let btnMode = document.querySelector("#mode");
-let currMode = "light" ;
-
-btnMode.addEventListener("click",() =>{
-    if(currMode === "light"){
-        currMode = "dark";
-        document.body.style.background = "black";
-    }
-    else{
-        currMode = "light";
-        document.body .style.background = "white";
-    }
-})*/
-/*
-const employee = {
-    calcTax(){
-        console.log("taking tax 10%");
-    }
-};
-
-const arjun = {
-    salary:500000,
-};
-
-arjun.__proto__ = employee ;
-*/
-
-// CLASSES IS A PROGRAM - CODE TEMPLATE FOR CREATING OBJECTS //
-// THOSE OBJECTS WILL HAVE SOME STATE(VARIABLES) & SOME BEHAVIOUR (FUNCTIONS) INSIDE IT. //
-/*
- class toyatoCar {
-    start(){
-        console.log("start");
-    }
-    stop(){
-        console.log("stop");
+ let i = 0;
+ for(i;i<=10;i++){
+    if(i % 2 ==0){
+        console.log("even num",i);
     }
  }
+    
 
- let fortuner = new toyatoCar();*/
-  /*
- class benz {
-    constructor(brand,milage){
-        console.log("creating an object");
-        this.brand = brand;
-        this.milage = milage;
+  let i = 0;
+  while(i<=100){
+    if(i % 2 ===0){
+        console.log("even numbers",i);
     }
-    newModel(){
-        console.log("this is new model car");
-    }
-    oldModel(){
-        console.log("this is old model car");
-    }
- }
- let bnw = new benz("bnw",12);
- console.log("bnw")
- let audi = new benz("audi",10);
- console.log("audi")
- */
+    i++;
+  }
+ 
 
- //INHERITENCE //
 
- //INHERITENCE IS PASSING DOWN PROPERTIES & METHODS FROM PARENT CLASS TO CHILD CLASS // 
+  let i = 0;
+  do{
+    if(i % 2 !==0){
+        console.log("even numbers",i);
+    }
+    i++;
+  }while(i<=100);
+
+//   let i = 1;
+
+// do {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+//   i++;
+// } while (i <= 20);
+
 /*
-  class person {
-    constructor(){
-        this.species = "homo species"
-    }
-    personEat(){
-        console.log("i am eating");
-    }
-    personWalk(){
-        console.log("i am walking");
-    }
-    personTalk(){
-        console.log("i am talking");
+function checkEvenOrOdd(number) {
+    if (number % 2 === 0) {
+      console.log(`${number} is Even`);
+    } else {
+      console.log(`${number} is Odd`);
     }
   }
-  class animal extends person{
-    animal(){
-        console.log("i am bark")
-    }
-  }
-
-  let natureObj = new person();
+  
+  // Test it:
+  checkEvenOrOdd(4);  // Output: 4 is Even
+  checkEvenOrOdd(7);  // Output: 7 is Odd
   */
 
-  // SUPER KEYWORD //
+// for(i = 1;i<=30;i++){
+//     if(i % 3 === 0 && i % 5 === 0){
+//         console.log("fizzBuzz",i);
+//     }
+//     else if( i % 3 === 0){
+//         console.log("fizz",i);
+//     }
+//     else if(i % 5 ===0){
+//         console.log("buzz",i);
+//     }
+//     else{
+//         console.log(i);
+//     }
+// }
+/*
 
-  // THE SUPER KEYWORD IS USED TO CALL THE CONSTRUCTOR OF ITS PARENT CLASS //
-  // TO ACCESS THE PARENTS PROPERTIES AND METHODS //
- /*
-  let DATA = "secret website";
+FIZZ BUZZ GAME 
+for(i = 1;i<=30;i++){
+    if(i % 3 === 0 && i % 5 === 0 ){
+        console.log("fizzBuzz",i);
+    }
+    else if(i % 3 === 0){
+        console.log("fizz");
+    }
+    else if(i % 5 === 0){
+        console.log("Buzz");
+    }
+    else{
+        console.log(i);
+    }
+}*/
+
+// SQUARE ROOT 
+// 
+// function squareRoot(a){
+//     return a * a ;
+// }
+// let result =squareRoot(5);
+// console.log(result)
+// 
+// LEAP YEAR
+// let leapYear = prompt("Enter any Year");
+// if(leapYear % 4 === 0){
+//     console.log("This is a  leap year",leapYear);
+// }
+// else{
+//     console.log("Not  a leapYear",leapYear);
+// }
+
+// JAVA SCRIPT FUNCTIONS
+
   
-  class user {
-    constructor(name,email){
-        this.name = name;
-        this.email = email;
-    }
+   
 
-    viewData(){
-        console.log("data = ",DATA)
-    }
-  }
-
-  let student1 = new user("jagan","abc@gmail.com");
-  let student2 = new user("alekhya","abc@gmail.com");*/
-  /*
-  let DATA = "details about the Benz company";
-class Benz{
-    constructor(brand, milage){
-        this.brandName = brand ;
-        this.myMilage = milage;
-    }
-     viewData(){
-        console.log("details about the benz cars =",DATA);
-     }
-
-     class toyato extends Benz{
-       constructor(brand,milage){
-        super(brandName,myMilage);
-       }
-       editData(){
-        DATA = "i am changed"
-       }
-     }
-}
-
-let modelNo1 = new Benz("rolls roylas","56 km per hour");
-let modelNo2 = new Benz("audi","45 km per hour");
-
-*/
-
-// USING TRY-CATCH METHOD //
-// IT CAN USES TO HANDLING THE ERRORS
-
-/*
-let a = 100 ;
-let b = 200;
-
-console.log("a + b =",a+b);
-console.log("a + b =",a+b);
-try{
-console.log("a + b =",a+c);
-}
-catch(error){
-  console.log(error);
-}
-
-console.log("a + b =",a+b);
-console.log("a + b =",a+b);
-console.log("a + b =",a+b);
-*/
-
- // SYNS IN JS
- /*
- SYNCHRONOUS 
-       SYNCHRONOUS MEANS THE CODE RUNS IN A PERTICULAR SEQUENCE IF INSTRUCTIONS GIVEN IN THE PROGRAM
- EACH INSTRUCTION WAITS FIRTHE PREVIOUS INSTRUCTIONS TO COMPLETE ITS EXECUTION
- */
-
- // ASYNCHRONOUS 
- /*
- DUE TO SYNCRONOUS PROG , SOMETIMES IMP INSTRUCTIONS GET BLOCKED DUE TO SOME PREVIOUS INSTRUCION
- , WHICH CAUSES A DELAY IN THE UI , 
-
- ASYNCHRONOUS CODE EXECUTION ALLOWS TO EXECUTE NEXT INSTRUCTIONS IMMEDIATELY AND DOESN'ST BLOCK THE CODE
- */
-/*
- function hello(){
-    console.log("hello");
- }
-
- setTimeout(hello,7000) // 2s = 2000ms(milliseconds)
- */
-
-/*
- console.log("one");
- console.log("two");
-
- setTimeout( () => {
-    console.log("hello");
- },9000);
-
- console.log("three");
- console.log("four");
- */
-
- // CALLBACKS
- // A callback is a function passed as an argument to another function
-/*
- function sum(a,b){
-    console.log(a+b);
- }
- function calculate(a,b,numCallback){
-    numCallback(a,b); 
- }
- calculate(2,3,sum);
- */
-
- // CALLBACK HELL
- // NESTED CALLBACKS STACKED BELOW ONE ANOTHER FORMING A PU=YRAMID STRUCTURE(PYRAMID OF DOOM)
- //THIS STYLE I=OF PROGRAMMING BECOMES DIFFICULT TO UNDERSTAND & MANAGE
-
-/*
- function getData(dataId){
-    setTimeout(() =>{
-        console.log("data",dataId);
-    },2000)
- }
-*/
-// PROMISES //
-// PROMISES IS FOR "EVATUAL" COMPLETION OF TASK. IT IS AN OBJECT IN JS.
-// IT IS A SOLUTION TO CALLBACK HELL
-// PENDING : THE RESULT IS UNDFINED
-// RESOLVED : THE RESULT IS A VALUE(FLFILLED)
-
-// let promise = new Promise ((resolve,reject)=>{....})
-/*
-let promise = new Promise((resolve,reject) =>{
-    console.log(" I am a Promise");
-     reject('some error occured');
-});
-
-const getPromise = () => {
-    new Promise((resolve,reject) =>{
-        console.log("hello world");
-        reject("success");
-    });
-} 
-  */      
-
-//ASYNC - AWAIT
-//ASYNC FUNCTION ALEAYS RETURNS A PROMISE
-// async function myFunc(){....}
-//AWAIT PAUSES THE EXECUTION OF ITS SURROUNDINGS ASYNC FUNCTION UNTIL THE PROMISE IS SETTLED
+// function happyBirthday(username,age){
+//     console.log(`happy birthday dear${username}!`);
+//     console.log(`you are ${age} years old`);
+// }
+// happyBirthday("jagan",21);
+// happyBirthday("spiderman",23);
+// happyBirthday("Hulk",30);
+// happyBirthday("iron man",45);
  
+// function add(x,y){
+//    return x + y;
+// }
+// let result = add(5,6);
+// console.log(result);
 /*
-document.querySelector(".head") . innerText = "i am change text";
-document.querySelector(".head").style.color="red";
+function sub(x,y){
+    return x - y ;
+}
+console.log(sub(4,5));
 
-document.getElementById("btn"). onclick function () =>  {
-    console.log("I  am submit the Button")
+function div(a,b){
+    return a / b;
+}
+console.log(div(10,2));
+
+function squr(x){
+    return x * x;
+}
+console.log(squr(5,5));
+
+
+function leap(x,){
+    if(x % 4 === 0){
+        console.log("it is a Leap Year");
+    }
+    else{
+        console.log("Its  not a leap year");
+    }
+}
+console.log(leap(2009));
+*/
+
+// FUNCTION DECLARATON
+// function greet(name){
+//     return `my name is ${name}`
+// }
+// console.log(greet("jagan"));
+
+// function hello(name){
+//     return `Hello my name is ${name}`;
+// }
+// console.log(hello("Alekhya"));
+
+//FUNCTION EXPRESSION
+/*
+const greet = function(name){
+    return `Hello my name is ${name}`;
+}
+
+console.log(greet("Bahubali"));
+
+const hello= function(name){
+    return `Hello my name is ${name}`;
+}
+
+console.log(hello("Jagan"));*/
+
+// setTimeout(hello,3000);
+// function hello(){
+//     console.log("hello");
+
+// const num = [1,2,3,4,5];
+// const doubled = num.map(num => num * 3);
+// console.log(doubled);
+
+// GLOBAL AND LOCAL 
+// function localExample(){
+//     let example = "hello I am a localExample";
+//     console.log(example)
+// }
+// localExample();
+
+// let globalExample = "i am a globalExample";
+
+// function global(){
+//     console.log(globalExample);
+// }
+// global();
+
+ //let arr = ["Iron man","spider man","Hulk","Thor","antman","captain america","hulk3","dr strange"];
+ //let num = ["jagan","ram","pavan","prakash"];
+// console.log(arr.push("Captain America"),arr);
+// console.log(arr.pop(3));
+// console.log(arr.unshift("Captain America"),arr);
+// console.log(arr.shift());
+// console.log(arr.slice(2),arr);  
+// console.log(arr.splice(2,2,"Bahubali"));
+// console.log(arr.join(5));
+// console.log(arr.toString(arr));
+// console.log(arr.splice(1,2)); 
+// console.log(arr.concat(num));
+// console.log(arr.slice(2,5));//slice(startInd,endIndx);
+//console.log(arr.splice(2,2,"jagan","bhuvan"),arr); // SPLICE(STARTIDX,DELCOUNT,NEW ELEMENT N)
+// let companies = ["bloomerg","microsoft","uber","google","IBM","Netflix"];
+// console.log(companies.shift(0));
+// console.log(companies.splice(2,1,"ola"),companies);
+// console.log(companies.push("amazon"),companies)
+
+
+
+// LOOPING OVER ARRAY
+
+// let heroes = ["mahesh","prabhas","ram charan","ravi teja","nani"];
+// for(i=0;i<heroes.length;i++){
+//     console.log(heroes[i]);
+// }
+
+//FOR OF
+/*
+let cities = ["mumbai","karnataka","tamilnadu","hyderabad",]
+
+for(let i of cities){
+    console.log(i.toUpperCase());
 }
     */
+    //PRACTICE
+    /*
+   let marks = [85,97,44,37,76,60];
+
+   let result = marks[0]+marks[1]+marks[2]+marks[3]+marks[4]+marks[5];
+   console.log(result/6);
+*/
+
+// let marks = [85,97,44,37,76,60];
+
+// let sum = 0;
+
+// for(let val of marks){
+//     sum +=val;
+// }
+
+// let avg = sum / marks.length ;
+// console.log(`the avg marks of the student is ${avg}`);
+
+// let num = [1,2,3,4,5,6,7,8,9,10];
+// let doubled = num.map(num => num * 5);
+
+// console.log(doubled);
+
+// for(i=1;i<=50;i++){
+//     if(i % 5 ===0){
+//         console.log(i);
+//     }
+// }/
+
+// let favoriteMovies = ["Bahubali","Sahoo","Mirchi","Salaar","Spirit"];
+// favoriteMovies.forEach(movie => console.log(movie));
+/*
+let favoriteMovies = ["jersey","spirit","3","Raghuvaran"];
+favoriteMovies.forEach(movie => console.log(movie));
+
+let numbers = [1,2,3,4,5,6,7,8,9];
+numbers.forEach(num => console.log(num));
+*/
+
+// DAY - 6
+// OBJECTS ARE REPRESENTS REAL ENTITIES
+/*
+const user = {
+    name : "jagan",
+    age : 20,
+    isMember : true,
+};
+user.country ="india";
+console.log(user);
+*/
+
+// let alien ={
+//      name:"jagan",
+//      age:20,
+//      technology:"java script",
+//      isEmploye:true, 
+//      "work exp" : 4
+// }
+// console.log(alien["work exp"]);
+// alien.salary = "200000"; 
+
+// const person = {
+//     name: "Bob",
+//     greet: function() {
+//       console.log(`Hi, I'm ${this.name}`);
+//     }
+//   };
+  
+//   person.greet(); // Hi, I'm Bob
+
+// ARRAY OF OBJECTS
+ 
+// const users = [
+//     { name: "John", age: 28 },
+//     { name: "Lily", age: 24 },
+//     { name: "Mike", age: 30 }
+//   ];
+  
+//   // Loop through array of objects
+//   users.forEach(user => {
+//     console.log(`${user.name} is ${user.age} years old.`);
+//   });
+
+// const person =[
+//     {name : "jagan",age : 20},
+//     {name : "lily",age : 24 },
+//     {name :"Mike",age :25}
+// ]
+// // console.log(person);
+// person.forEach(person =>{
+//      console.log(`${person.name} is ${U})`);}
+  
+  
